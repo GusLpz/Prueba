@@ -276,13 +276,8 @@ else:
         beta_asset = calcular_beta(returns[selected_asset], returns[benchmark])
         st.metric(f"Beta vs {selected_benchmark}", f"{beta_asset:.2f}")
 
-        col44 = st.columns(1)
-        col44.metric("Media Pen", f"{returns[selected_asset].mean():.2%}")
-
-        
-        
-
-    
+             
+          
     with tab2:
         st.header("Análisis del Portafolio")
         
